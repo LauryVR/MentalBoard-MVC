@@ -20,7 +20,7 @@ namespace MentalBoard_MVC.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            return RedirectToAction("Index", "Login");
         }
 
         public IActionResult Privacy()
