@@ -2,32 +2,53 @@
 @{
     ViewData["Title"] = "Menu";
 }
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+            </div>
 
-    <div class="col-lg-3 col-md-3">
-        <div class="card card-inverse">
-            <div class="card-body">
-                <nav class="sidebar-nav active">
-                    <ul id="sidebarnav">
-                        <li>Cotizacion # @Model.Quotation.QuotationCode</li>
-                        <li>Version # @Model.Quotation.QuotationVersion</li>
-                        <li class="nav-devider"></li>
+            <ul class="list-unstyled components">
+                <p>Dummy Heading</p>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
                         <li>
-                            <a asp-action="" class="waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-file-document"></i><span class="hide-menu">Home</span></a>
+                            <a href="#">Home 1</a>
                         </li>
                         <li>
-                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-account-circle"></i><span class="hide-menu">Daily Suggestion</span></a>
+                            <a href="#">Home 2</a>
                         </li>
                         <li>
-                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-tag-multiple"></i><span class="hide-menu">Interests</span></a>
-                        </li>
-                        <li>
-                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-cash"></i><span class="hide-menu">Saved Pages</span></a>
-                        </li>
-                        <li>
-                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Configuration</span></a>
+                            <a href="#">Home 3</a>
                         </li>
                     </ul>
-                </nav>
-            </div>
-        </div>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
     </div>

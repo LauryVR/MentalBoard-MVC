@@ -86,7 +86,7 @@ html, body {
     align-content: center;
 }
 
-.card {
+.card1 {
     height: 370px;
     margin-top: auto;
     margin-bottom: auto;
@@ -156,3 +156,9 @@ input:focus {
     .links a {
         margin-left: 4px;
     }
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
