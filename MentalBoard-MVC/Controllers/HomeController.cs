@@ -22,6 +22,10 @@ namespace MentalBoard_MVC.Controllers
         {
             return RedirectToAction("Index", "Login");
         }
+        public IActionResult Menu()
+        {
+            return View("Privacy");
+        }
 
         public IActionResult Privacy()
         {

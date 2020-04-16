@@ -1,0 +1,33 @@
+﻿
+@{
+    ViewData["Title"] = "Menu";
+}
+
+    <div class="col-lg-3 col-md-3">
+        <div class="card card-inverse">
+            <div class="card-body">
+                <nav class="sidebar-nav active">
+                    <ul id="sidebarnav">
+                        <li>Cotizacion # @Model.Quotation.QuotationCode</li>
+                        <li>Version # @Model.Quotation.QuotationVersion</li>
+                        <li class="nav-devider"></li>
+                        <li>
+                            <a asp-action="" class="waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-file-document"></i><span class="hide-menu">Home</span></a>
+                        </li>
+                        <li>
+                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-account-circle"></i><span class="hide-menu">Daily Suggestion</span></a>
+                        </li>
+                        <li>
+                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-tag-multiple"></i><span class="hide-menu">Interests</span></a>
+                        </li>
+                        <li>
+                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-cash"></i><span class="hide-menu">Saved Pages</span></a>
+                        </li>
+                        <li>
+                            <a asp-action="" asp-controller="" class=" waves-effect waves-dark" aria-expanded="false"><i class="mdi mdi-settings"></i><span class="hide-menu">Configuration</span></a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
