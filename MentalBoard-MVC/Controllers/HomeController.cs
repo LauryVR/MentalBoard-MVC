@@ -24,7 +24,7 @@ namespace MentalBoard_MVC.Controllers
         }
         public IActionResult Menu()
         {
-            return View("Privacy");
+            return View("Menu");
         }
 
         public IActionResult Privacy()
