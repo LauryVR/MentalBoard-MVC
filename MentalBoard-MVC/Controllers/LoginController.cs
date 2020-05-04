@@ -63,7 +63,7 @@ namespace MentalBoard_MVC.Controllers
                     identity.AddClaims(secToken.Claims);
                     var principal = new ClaimsPrincipal(identity);
                     await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
-                    return RedirectToAction("Menu", "Home");
+                    return RedirectToAction("Home", "Home");
                 }
                 else
                 {

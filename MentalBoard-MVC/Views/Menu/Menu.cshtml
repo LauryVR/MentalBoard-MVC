@@ -1,0 +1,88 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/site.css">
+</head>
+<body class="body">
+
+    <div class="wrapper">
+        <nav id="sidebar" style="padding:1%; font-size:130%">
+            <div class="sidebar-header">
+                <img style="width:100%" src="~/css/Images/Logo.png" />
+            </div>
+
+            <ul class="list-unstyled components">
+                <hr style="border-color:#47748b;">
+                <li id="1" class="active" onclick="selectChanged(this.id)">
+                    <a  href="#homeSubmenu">Home</a>
+                </li>
+                <li id="2" onclick="selectChanged(this.id)">
+                    <a  href="#pageSubmenu">Learn</a>
+                </li>
+                <li id="3" onclick="selectChanged(this.id)">
+                    <a  href="#">Last Views</a>
+                </li>
+                <li id="4" onclick="selectChanged(this.id)">
+                    <a  href="#">Settings</a>
+                </li>
+                <hr style="border-color:#47748b;">
+                <li id="signOut" onclick="selectChanged(this.id)">
+                    <a href="#">Sign Out</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content" style="padding:1%">
+
+            <nav class="">
+                <div class="">
+                  <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                            <i class="glyphicon glyphicon-align-left"></i>
+                            
+                  </button>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+
+        function selectChanged(e) {
+            document.getElementById(e).className = "active";
+            if (e == 1) {
+                document.getElementById("2").className = "";
+                document.getElementById("3").className = "";
+                document.getElementById("4").className = "";
+            } else if (e == 2) {
+                document.getElementById("1").className = "";
+                document.getElementById("3").className = "";
+                document.getElementById("4").className = "";
+            } else if (e == 3) {
+                document.getElementById("1").className = "";
+                document.getElementById("2").className = "";
+                document.getElementById("4").className = "";
+            }
+            else if (e == 4) {
+                document.getElementById("1").className = "";
+                document.getElementById("2").className = "";
+                document.getElementById("3").className = "";
+            }
+        }
+    </script>
+</body>
+</html>

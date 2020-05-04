@@ -22,15 +22,11 @@ namespace MentalBoard_MVC.Controllers
         {
             return RedirectToAction("Index", "Login");
         }
-        public IActionResult Menu()
+        public IActionResult Home()
         {
-            return View("Menu");
+            return View("Index");
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
